@@ -2,12 +2,12 @@
 <search>
   <entry>
     <title><![CDATA[PYNQ软硬件开发的新利器]]></title>
-    <url>%2F2019%2F03%2F15%2Fpost-title%2F</url>
+    <url>%2Fpost-title.html</url>
     <content type="text"><![CDATA[PYNQ是Xilinx公司的开源项目，使用Python语言和库，让开发者可以更方便的基于ZYNQ创建高性能嵌入式系统，更方便的使用PS-PL结合。 ZYNQ是ARM+FPGA的架构，开发思路类似传统CPU+FPGA协处理器。由于涉及到了FPGA硬件，若要发挥出其最大的优势，开发思路并不是码完代码直接跑这样单纯。关于这点在下文中将尝试对ZYNQ进行解释，ZYNQ是个比较有趣的硬件平台。 板子正面比较简洁。整体色调为粉色。第一眼可以看到有数个PMOD接口、Raspberry Pi兼容接口、Arduino 拓展板接口。核心器件 ZYNQ7020已经被散热片覆盖。 在官方推崇的主流开发流程中，只需网线和供电，配合jupyter即可完成大部分开发操作。 因此大部分情况下，它通过Ethernet接入你的PC或者局域网后，只需安静地躺在桌子旁边。必要时可连接USB URAT进行debug。 ZYNQ是Xilinx出品的片上系统（SoC，System On Chip）。SoC指单个硅芯片可以来实现整个系统的功能，往往该系统可能需要多个不同的芯片。在消费电子中，你可能比较熟悉高通的手机处理器骁龙系列，没错，骁龙就是典型的SoC，它在一片SoC上集成了移动宽带解调与多媒体、3D图形、GPS等功能。SoC意味着是解决方案，往往有着更好的数据传输、更低功耗和更小的空间占用。 我们今天的主角ZYNQ的架构图如下。在这一片SoC中，将处理系统Process System和可编程逻辑Programmable System集合起来，其间使用片内AXI总线连接。 PYNQ是Xilinx公司的开源项目，只在使用Python语言和库，让开发者可以更方便的基于ZYNQ创建高性能嵌入式系统，更方便的使用PS-PL结合。 并行硬件执行高帧率视频处理硬件加速算法实时信号处理高带宽IO低延迟控制 PYNQ试图将设计流程变得更加友好，面向系统架构师和软件开发工程师。 希望利用Zynq和可编程硬件功能而无需使用ASIC式设计工具来设计硬件的软件开发人员。系统架构师需要一个简单的软件界面和框架来快速进行原型设计和Zynq设计的开发。希望他们的设计被最广泛的受众使用的硬件设计师。PYNQ使用Jupyter Notebook，直接使用基于浏览器对硬件进行交互。 项目官网和文档见 http://www.pynq.io/ 个人理解，PYNQ更像是一个创客的玩具。它试图将设计流程变得更加友好，Python也迎合了很多软件开发者的口味。为了更加友好地使用PL端，PYNQ提供了overlay。PYNQ提供了一个Python接口，允许通过PS中运行的Python控制PL中的Overlay。FPGA设计是一项需要硬件工程知识和专业知识的专业任务。PYNQ的Overlay层由硬件设计人员创建，并包含在此PYNQ Python API中。然后，软件开发人员可以使用Python接口来编程和控制专用硬件Overlay，而无需自己设计。 使用Pynq 实现 Tiny YOLO目标检测算法 YOLO是一个神一样的目标检测算法。目标检测，简单来说，输入是一幅图像，输出是检测出目标的类型和图像中的位置。]]></content>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F03%2F15%2Fhello-world%2F</url>
+    <url>%2Fhello-world.html</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
