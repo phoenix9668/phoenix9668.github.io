@@ -96,8 +96,20 @@
   
 
 
-
-
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
   <meta name="description" content="FGPA中国是一家致力于高新技术和移动互联网知识传播的研发机构。当前全力发展对于社会紧缺的SOC技术、FPGA技术人才的培养。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="employment">
